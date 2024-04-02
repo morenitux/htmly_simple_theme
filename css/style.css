@@ -1,0 +1,145 @@
+* { font-family: Aptos, Arial, Helvetica, sans-serif; }
+
+/* Estilos para las columnas */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+float: left;
+/* Hacer que las columnas floten a la izquierda */
+box-sizing: border-box;
+/* Incluir el padding en el ancho total */
+}
+
+/* Ancho de las columnas */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.67%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.67%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.67%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.67%; }
+.col-12 { width: 100%; }
+
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+   box-sizing: border-box;
+}
+
+/* Clearfix para las filas */
+.row::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+
+hr {
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(188, 188, 188, 0.756), rgba(9, 84, 132), rgba(0, 0, 0, 0));
+}
+
+h1 { text-align: center; }
+h1.main{text-align: left; font-weight: bolder; font-size: 2.1em;}
+
+p {
+   line-height: 1.1em;
+   margin-bottom: 20px;
+}
+
+p.bio {
+   margin-top: -20px;
+   font-style: italic;
+}
+
+.simple-li {
+   list-style:circle;
+   padding-left: 1em;
+}
+.static-ul ul{
+   list-style:circle;
+   padding-left: 1em;
+}
+
+.note {
+   font-size: .70em;
+   color: rgb(71, 71, 71);
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 36px;
+   padding-bottom: 8px;
+}
+
+.navbar-top{
+   margin-top: 12px;
+}
+
+.back-page{
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-family: Aptos, Arial, Helvetica, sans-serif;
+   text-decoration: none;
+}
+
+.back-to-top {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   display: none;
+}
+.back-to-top.top {
+   top: 20px;
+   bottom: auto;
+}
+
+/* Estilos generales para la etiqueta pre */
+pre {
+   background-color: #f4f4f4;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   font-family: Consolas, monospace !important; 
+   padding: 14px;
+   overflow-x: auto;
+   white-space: pre-wrap;
+}
+
+/* Estilos para resaltar la sintaxis */
+pre code {
+   display: block;
+   padding: 0;
+   margin: 0;
+   font-size: 14px;
+   color: #333;
+   font-family: Consolas, monospace !important; 
+
+}
+
+pre, code { white-space: pre-line; }
+
+pre > code > i { white-space: pre; }
+
+/* Estilos para palabras clave */
+pre code.keyword { color: #007bff; }
+
+/* Estilos para cadenas */
+pre code.string { color: #28a745; }
+
+/* Estilos para comentarios */
+pre code.comment { color: #6c757d; }
+
+/* Estilos para números */
+pre code.number { color: #17a2b8; }
